@@ -30,7 +30,7 @@
             </a>
         </div>
         <a href="./Tools/login.html">
-            <button class="login-btn">LOGIN</button>
+            <button class="login-btn">登录</button>
         </a>
         <button class="translate-btn" id="translate-btn">
             <svg viewBox="0 0 24 24" class="translate">
@@ -44,51 +44,51 @@
     <div class="text-frame">
         <h1 id="countdown"></h1>
      </div>
-     <h2 class="second-title">My social account</h2>
+     <h2 class="second-title">我的联系方式</h2>
      <ul class="list">
         <li>
-            <a href="https://github.com/FriendlyXuKun" target="_blank">Look at my GitHub!</a>
+            <a href="https://github.com/FriendlyXuKun" target="_blank">嘿，来看看我的Github！</a>
         </li>
          <li>
-            <a href="https://weibo.com/u/7821122461" target="_blank">Or my Weibo.</a>
+            <a href="https://weibo.com/u/7821122461" target="_blank">或者这是我的微博</a>
         </li>
         <li>
-            <a href="https://space.bilibili.com/1242660278?spm_id_from=333.1007.0.0" target="_blank">Others...My bilibili?</a>
-        </li>
-    </ul>
-    <h2 class="second-title">Tools</h2>
-    <ul class="list">
-        <li>
-            <a href="./Tools/company_games.html">The games of our company.</a>
-        </li>
-        <li>
-            <a href="./Tools/games.html">Some interesting online games.</a>
-        </li>
-        <li>
-            <a href="./Tools/calculator.html">Calculator</a>
-        </li>
-        <li>
-            <a href="./Tools/FlipCardGame.html" >Flip Card Game</a>
-        </li>
-        <li>
-            <a href="./Tools/music.html">Jay Chou's music</a>
+            <a href="https://space.bilibili.com/1242660278?spm_id_from=333.1007.0.0" target="_blank">其他的话……哔哩哔哩？</a>
         </li>
     </ul>
-    <h2 class="second-title">Projects under development</h2>
+    <h2 class="second-title">工具</h2>
     <ul class="list">
         <li>
-            <a href="https://github.com/TheMagicFlute/LCL">The LiChen Programming Language (LCL Source Code)</a>
+            <a href="./Tools/company_games.html">我们的游戏（目前无下载方式）</a>
+        </li>
+        <li>
+            <a href="./Tools/games.html">一些有趣的在线游戏</a>
+        </li>
+        <li>
+            <a href="./Tools/calculator.html">计算器</a>
+        </li>
+        <li>
+            <a href="./Tools/FlipCardGame.html" >翻卡游戏</a>
+        </li>
+        <li>
+            <a href="./Tools/music.html">Jay Chou（周杰伦）的音乐</a>
+        </li>
+    </ul>
+    <h2 class="second-title">我们正在开发的项目</h2>
+    <ul class="list">
+        <li>
+            <a href="https://github.com/TheMagicFlute/LCL">李辰程序设计语言（源代码）</a>
             <br>
-            <a href="https://themagicflute.github.io/LCL">LCL Official Website</a>
+            <a href="https://themagicflute.github.io/LCL">LCL官方网站</a>
         </li>
     </ul>
-    <h2 class="second-title">Other links</h2>
+    <h2 class="second-title">其他链接</h2>
     <ul class="list">
         <li>
-            <a href="https://themagicflute-studio.github.io" target="_blank">Our studio's GitHub Pages.</a>
+            <a href="https://themagicflute-studio.github.io" target="_blank">我们的工作室页面（网站）</a>
         </li>
         <li>
-            <a href="https://themagicflute.github.io" target="_blank">TheMagicFlute's Pages</a>
+            <a href="https://themagicflute.github.io" target="_blank">TheMagicFlute的页面（工作室成员）</a>
         </li>
     </ul>
     <script>
@@ -105,7 +105,7 @@
             var timeLeft = targetDate - currentDate;
 
         if (timeLeft <= 0) {
-            document.getElementById("countdown").innerHTML = "Happy <span>NEW</span> Year!<br>Wish you'll be better this <span>NEW</span> year!";
+            document.getElementById("countdown").innerHTML = "<span>新</span> 年快乐!<br>祝愿你变得更好在这 <span>新</span> 的一年!";
             return;
         }
 
@@ -113,7 +113,7 @@
         var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-        document.getElementById("countdown").innerHTML = "There are still <span>" + hours + "h " + minutes + "min " + seconds + "s</span><br> left until New Year's Eve";
+        document.getElementById("countdown").innerHTML = "还有 <span>" + hours + "h " + minutes + "min " + seconds + "s</span><br> 迎来2024年！";
     }
 
     // 每秒钟更新一次倒计时
